@@ -4,6 +4,7 @@ and is a caching system"""
 
 BaseCaching = __import__('base_caching').BaseCaching
 
+
 class BasicCache(BaseCaching):
     """A class that inherit from basecaching"""
 
@@ -16,4 +17,3 @@ class BasicCache(BaseCaching):
         """return value in self.cache_data linked to the key"""
         if key:
             return self.cache_data.get(key, None)
-
