@@ -3,7 +3,7 @@
 Use request.accept_languages to determine the best
 match with our supported languages
 """
-from babel import Babel
+from flask_babel import Babel
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
