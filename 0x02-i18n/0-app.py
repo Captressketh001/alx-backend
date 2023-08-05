@@ -8,10 +8,11 @@ app = Flask(__name__)
 @app.route('/', strict_slashes=False)
 def index():
     """a single / route and an index.html template that simply outputs
-    “Welcome to Holberton” as page title (<title>) and “Hello world” as header (<h1>)
+    “Welcome to Holberton” as page title (<title>) and
+    “Hello world” as header (<h1>)
     """
     title = "Welcome to Holberton"
-    header = "Hello World"
+    header = "Hello world"
 
     return render_template("0-index.html", title=title, header=header)
 
