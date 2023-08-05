@@ -11,10 +11,8 @@ def index():
     “Welcome to Holberton” as page title (<title>) and
     “Hello world” as header (<h1>)
     """
-    title = "Welcome to Holberton"
-    header = "Hello world"
+    return render_template("0-index.html")
 
-    return render_template("0-index.html", title=title, header=header)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
