@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
-"""Create a get_locale function with the babel.localeselector decorator.
-Use request.accept_languages to determine the best
-match with our supported languages
+"""Create a get_locale function with the babel.localeselector decorator
 """
 from flask import Flask, render_template, request
-from flask_babel import Babel, gettext
+from flask_babel import Babel
 
 
 app = Flask(__name__)
